@@ -15,28 +15,28 @@
 #define S_SHORT 1
 
 /**
- * struct format - Struct op
+ * struct fmt - Struct op
  *
- * @format: The format.
+ * @fmt: The format.
  * @fn: The function associated.
  */
-struct format
+struct fmt
 {
-	char format;
+	char fmt;
 	int (*fn)(va_list, char[], int, int, int, int);
 };
 
 
 /**
- * typedef struct format format_t - Struct op
+ * typedef struct fmt fmt_t - Struct op
  *
- * @format: The format.
+ * @fmt: The format.
  * @fm_t: The function associated.
  */
-typedef struct format format_t;
+typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
-int handle_print(const char *format, int *i,
+int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
 /****************** FUNCTIONS ******************/
