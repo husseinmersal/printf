@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_non_printable - functionPrints ascii codes of non printable characters
+ * print_non_printable - function that Prints ascii codes of non printable characters
  * @types: Arguments list
  * @buffer: Buffer array to handle print
  * @flags:  Gives active flags
@@ -38,3 +38,4 @@ int print_non_printable(va_list types, char buffer[],
 
 	return (write(1, buffer, i + offset));
 }
+
