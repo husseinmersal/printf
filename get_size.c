@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_size - function that gives size 
+ * get_size - function that gives size
  * @format: format argument
  * @i: the printed list
  *
