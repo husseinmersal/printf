@@ -24,7 +24,8 @@ int handle_print(const char *format, int *ind, va_list list, char buffer[],
 	};
 	for (counter = 0; format_types[counter].format != '\0'; counter++)
 		if (format[*ind] == format_types[counter].format)
-			return (format_types[counter].fn(list, buffer, flags, width, precision, size));
+			return (format_types[counter].fn(list, buffer, flags, width,
+				precision, size));
 
 	if (format_types[counter].format == '\0')
 	{
