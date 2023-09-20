@@ -29,7 +29,7 @@ int handle_write_char(char c, char buffer[],
 	if (width > 1)
 	{
 		buffer[BUFF_SIZE - 1] = '\0';
-		for (counter = 0; counter < width - 1; i++)
+		for (counter = 0; counter < width - 1; counter++)
 			buffer[BUFF_SIZE - counter - 2] = start_pad;
 
 		if (flags & MINUS_FLAG)
