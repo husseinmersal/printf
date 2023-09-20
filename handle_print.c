@@ -14,7 +14,7 @@
 int handle_print(const char *format, int *ind, va_list list, char buffer[],
 	int flags, int width, int precision, int size)
 {
-	int i, unknown_len = 0, printed_chars = -1;
+	int counter, unknown_len = 0, printed_chars = -1;
 	format_t format_types[] = {
 		{'c', print_char}, {'s', print_string}, {'%', print_percent},
 		{'i', print_int}, {'d', print_int}, {'b', print_binary},
@@ -22,11 +22,11 @@ int handle_print(const char *format, int *ind, va_list list, char buffer[],
 		{'X', print_HEXA}, {'p', print_pointer}, {'S', print_non_printable},
 		{'r', print_reverse}, {'R', print_rot13string}, {'\0', NULL}
 	};
-	for (i = 0; format_types[i].format != '\0'; i++)
-		if (format[*ind] == format_types[i].format)
-			return (format_types[i].fn(list, buffer, flags, width, precision, size));
+	for (counter = 0; format_types[counter].format != '\0'; counter++)
+		if (format[*ind] == format_types[counter].format)
+			return (format_types[counter].fn(list, buffer, flags, width, precision, size));
 i
-	if (format_types[i].format == '\0')
+	if (format_types[counter].format == '\0')
 	{
 		if (format[*ind] == '\0')
 			return (-1);
