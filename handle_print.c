@@ -22,16 +22,15 @@ int handle_print(const char *format, int *ind, va_list list, char buffer[],
 		{'X', print_HEXA}, {'p', print_pointer}, {'S', print_non_printable},
 		{'r', print_reverse}, {'R', print_rot13string}, {'\0', NULL}
 	};
-<<<<<<< HEAD
+
 	for (counter = 0; format_types[counter].format != '\0'; counter++)
 		if (format[*ind] == format_types[counter].format)
 			return (format_types[counter].fn(list, buffer, flags, width,
 				precision, size));
-=======
 	for ( counter = 0; format_types[counter].format != '\0'; i++)
 		if (format[*ind] == format_types[ counter].format)
 			return (format_types[ counter].fn(list, buffer, flags, width, precision, size));
->>>>>>> e2e9a1cd91e1392cbd9ac6271da6c58661e38956
+
 
 	if (format_types[counter].format == '\0')
 	{
