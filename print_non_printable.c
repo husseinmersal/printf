@@ -37,4 +37,8 @@ int print_non_printable(va_list types, char buffer[],
 	buffer[i + offset] = '\0';
 
 	return (write(1, buffer, i + offset));
+<<<<<<< HEAD
+=======
+}
+>>>>>>> e2e9a1cd91e1392cbd9ac6271da6c58661e38956
 
