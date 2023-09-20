@@ -6,9 +6,9 @@
  * @buffer: Buffer
  * @flags: Flags
  * @width: width
- * @precision: Precision specifier
+ * @prec: Precision specifier
  * @length: Number length
- * @padd: Pading char
+ * @pading: Pading char
  * @extra_char: Extra char
  *
  * Return: Number of printed chars.

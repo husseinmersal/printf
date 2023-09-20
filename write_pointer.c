@@ -7,9 +7,9 @@
  * @length: Length of number
  * @width: Width specifier
  * @flags: Flags specifier
- * @padd: Char representing the padding
+ * @pading: Char representing the padding
  * @extra_char: Char representing extra char
- * @padd_start: Index at which padding should start
+ * @pad_start: Index at which padding should start
  *
  * Return: The printed number of characters.
  */
